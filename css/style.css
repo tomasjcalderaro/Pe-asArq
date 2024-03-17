@@ -17,6 +17,29 @@ header {
     display: flex;
     align-items: center;
 }
+
+.navbar .navbar-nav .nav-link{
+  position: relative;
+}
+.navbar .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #FFC300;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+.navbar-nav  .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
 /* Footer */
 .container__footer{
     display: flex;
@@ -249,7 +272,7 @@ header {
     background: rgb(49, 1, 49);
 }
 
-/* ejemplo*/
+/* Somos */
 .contenedor {
     width: 100%;
     height: 300px;
