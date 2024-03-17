@@ -1,4 +1,12 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 /* General */
+
 header {
     background-color: #6aa3b4;
 }
@@ -34,21 +42,21 @@ header {
     font-weight: 500;
     color: #000000;
     font-size: 18px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .box__footer h2{
     margin-bottom: 30px;
     color: #000000;
     font-weight: 700;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .box__footer a{
     margin-top: 10px;
     color: #000000;
     font-weight: 600;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .box__footer a:hover{
@@ -59,20 +67,21 @@ header {
     margin: auto;
     text-align: center;
     padding: 0px 40px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto", sans-serif;
+
 }
 
 .box__copyright p{
     margin-top: 20px;
     color: #000000;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .box__copyright hr{
     border: none;
     height: 1px;
     background-color: #000000;
-    font-family: 'Roboto Condensed', sans-serif;
+     font-family: "Roboto", sans-serif;
 }
 /* Imagenes y videos */ 
 .iconoinsta {
@@ -99,11 +108,7 @@ header {
     width: 1500px;
     height: 400px;
 }
-.imgPeñas {
-    display: flex;
-    width: 1500px;
-    height: 400 px;
-}
+
 
 .vid1 {
     display: flex;
@@ -118,21 +123,21 @@ header {
     display: flex;
     margin-top: 0px;
     margin-bottom: 80px;
-    
+    font-family: "Roboto", sans-serif;
 }
 .h1 {
     display: flex;
     background-color: #6aa3b4;
     justify-content: left;
     margin-top: 50px;
-
+    font-family: "Roboto", sans-serif;
 }
 
 .parrafos {
     display: flex;
     margin-top: 80px;
     margin-bottom: 80px;
-
+    font-family: "Roboto", sans-serif;
 }
 
 /* Proyectos */
@@ -161,13 +166,14 @@ header {
 
 }
 
-.container__cards {
-    max-width: 1200px;
+.container_cards {
+    width: 100%;
     margin: auto;
     margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 .card {
@@ -220,11 +226,12 @@ header {
 }
 .card .descripcion h2{
     margin-top: 10px;
+    text-align: center;
 
 }
 .card .descripcion p{
     margin-top: 10px;
-    
+   
 }
 .card .descripcion input{
     padding: 10px 40px;
@@ -241,3 +248,295 @@ header {
 .card .descripcion input:hover{
     background: rgb(49, 1, 49);
 }
+
+/* ejemplo*/
+.contenedor {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 450px;
+  }
+  .contenedor .tabla {
+    display: inherit;
+    flex-direction: column;
+    width: 470px;
+    height: 590px;
+    margin: 50px;
+    border: 1px solid #343759;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #343759;
+    padding: 60px;
+    text-align: center;
+    color: #000000;
+    background-color: #FFC300;
+  }
+  .contenedor .tabla h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .contenedor .tabla p {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .contenedor .tabla img {
+    width: 240px;
+    margin-bottom: 35px;
+    margin: auto;
+  }
+  .contenedor .tabla .boton {
+    width: 150px;
+    padding: 12px;
+    background: #D7FCD4;
+    text-decoration: none;
+    color: #343759;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+  }
+  .contenedor .tabla:hover {
+    background: #ffffff;
+    color: #000000;
+    transition: 0.5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  /* Tabla Programas */
+.textoProgramas {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    color: #000000;
+  }
+  
+  .containerBox {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .containerBox .boxCard {
+    width: 218px;
+    height: 200px;
+    background: #fff;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 300ms ease;
+    position: relative;
+  }
+  .containerBox .boxCard:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
+    background: #FFC300;
+    z-index: 1;
+  }
+  .containerBox .boxCard .icono1 {
+    width: 32px;
+  }
+  .containerBox .boxCard h5 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000000;
+  }
+  .containerBox .boxCard h5hover {
+    font-size: 14px;
+    transition: all 600ms ease;
+  }
+  
+
+/* Formulario contacto*/
+.formularioContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .formularioContacto .formulario {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 70px 70px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+  }
+  .formularioContacto .formulario .title {
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  .formularioContacto .formulario .inputContainer {
+    position: relative;
+    width: 90%;
+    height: 45px;
+    margin-bottom: 17px;
+  }
+  .formularioContacto .formulario .inputContainer .input {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dadce0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  .formularioContacto .formulario .inputContainer .input::placeholder {
+    color: transparent;
+  }
+  .formularioContacto .formulario .inputContainer .input:focus + .label {
+    top: -8px;
+    left: 3px;
+    z-index: 10;
+    font-weight: 20px;
+    font-size: 14px;
+    color: purple;
+  }
+  .formularioContacto .formulario .inputContainer .input:focus {
+    margin-bottom: 20px;
+    border: 2px solid purple;
+  }
+  .formularioContacto .formulario .inputContainer .input:not(:placeholder-shown) + .label {
+    top: -8px;
+    left: 3px;
+    z-index: 10;
+    font-weight: 20px;
+    font-size: 14px;
+  }
+  .formularioContacto .formulario .inputContainer .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #9867c5;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  .formularioContacto .formulario .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .formularioContacto .formulario .submitBtn:hover {
+    background-color: #9867c5;
+    transform: translateY(-2px);
+  }
+
+  /* Proyecto */
+  .tituloProducto{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  .tarjeta {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .tarjeta .card {
+    margin-top: 80px;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 0.8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 70px 70px rgba(0, 0, 0, 0.4);
+    transition: 0.5s all;
+  }
+  .tarjeta .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.5s all;
+    transform: translateY(-3%);
+  }
+  .tarjeta .card .card-img {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  .tarjeta .card .card-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .tarjeta .card .card-info {
+    padding-top: 10%;
+  }
+  .tarjeta .card .card-info .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .tarjeta .card .card-info .text-body {
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    height: 100px;
+    word-wrap: break-word;
+    margin-bottom: 40px;
+  }
+  .tarjeta .card .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .tarjeta .card .card-footer .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .tarjeta .card .card-footer .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: 0.3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+  }
+  .tarjeta .card .card-footer .card-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .tarjeta .card .card-footer .card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+  }
