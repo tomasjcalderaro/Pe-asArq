@@ -499,6 +499,7 @@ header {
   margin-top: 30px;
   flex-direction: row;
   flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #projectFacts .fullWidth {
@@ -510,6 +511,8 @@ header {
   height: 100%;
   padding: 50px 0px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectFactsWrap .item:nth-child(1) {
@@ -528,13 +531,21 @@ header {
   background: rgb(23, 44, 66);
 }
 
+.projectFactsWrap .item .contenedorbarra {
+  display: flex;
+  justify-content: center;
+}
+.projectFactsWrap .item .suma {
+  font-size: 40px;
+}
 .projectFactsWrap .item p.number {
   font-size: 40px;
   padding: 0;
   font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.projectFactsWrap .item p {
+.projectFactsWrap .item p.titeje {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   margin: 0;
