@@ -40,6 +40,10 @@ header {
   transform: scaleX(1);
 }
 
+.navbar .container-fluid .navbar-collapse {
+  flex-grow: 0;
+}
+
 /* Footer */
 .container__footer {
   display: flex;

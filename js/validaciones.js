@@ -5,15 +5,6 @@ const apellido = document.getElementById("apellido");
 const email = document.getElementById("email");
 const mensaje = document.getElementById("mensaje");
 
-//form.addEventListener("submit", (e) => {
-  //e.preventDefault();
-
-  //let condicion = checkInputs();
-  //if (condicion) {
-   // enviarFormulario();
-  //}
-//});
-
  document.addEventListener('submit', (e) => {
         if (!checkInputs()) {
            e.preventDefault();
