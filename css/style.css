@@ -399,6 +399,18 @@ header {
   background: none;
   z-index: 1;
 }
+
+.formularioContacto .formulario .inputContainer.error .input .i {
+  visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.inputContainer.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
 .formularioContacto .formulario .inputContainer .input::placeholder {
   color: transparent;
 }
