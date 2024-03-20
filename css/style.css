@@ -44,6 +44,9 @@ header {
   flex-grow: 0;
 }
 
+.navbar .container-fluid .navbar-collapse .navbar-nav{
+  float: right;
+}
 /* Footer */
 .container__footer {
   display: flex;
