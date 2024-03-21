@@ -47,6 +47,10 @@ header {
 .navbar .container-fluid .navbar-collapse .navbar-nav{
   float: right;
 }
+.logo {
+filter: brightness(1.1);
+mix-blend-mode: multiply;
+}
 
 .video {
    overflow-x: hidden;
