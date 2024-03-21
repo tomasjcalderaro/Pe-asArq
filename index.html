@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -19,7 +20,7 @@
 <body>
   <header>
 
-    <nav class="navbar navbar-expand-lg bg-body-secundary">
+    <nav class="navbar navbar-expand-lg  bg-body-secundary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -97,7 +98,7 @@
         </button>
       </div>
 
-      <div>
+      <div class="video">
         <iframe class="vid1" width="560" height="315"
           src="https://www.youtube.com/embed/km8YSiE8JJw?si=URKrHlE9a_8wKhtT" title="YouTube video player"
           frameborder="0"
@@ -116,7 +117,7 @@
       </div>
       <div id="projectFacts" class="sectionClass">
         <div class="fullWidth eight columns">
-          <div class="projectFactsWrap ">
+          <div class="projectFactsWrap " data-aos="zoom-up" data-aos-duration="1000">
             <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
               <i class="fa fa-pencil"></i>
               <div class="contenedorbarra">
@@ -187,6 +188,10 @@
   </footer>
   <script src="./js/contador.js"></script>
   <script src="https://kit.fontawesome.com/3bfdc61062.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

@@ -47,6 +47,10 @@ header {
 .navbar .container-fluid .navbar-collapse .navbar-nav{
   float: right;
 }
+
+.video {
+   overflow-x: hidden;
+}
 /* Footer */
 .container__footer {
   display: flex;
@@ -60,6 +64,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 170px;
+  overflow-x: hidden
 }
 
 .box__footer .logo img {
@@ -544,7 +549,6 @@ header {
 
 .projectFactsWrap .item {
   width: 25%;
-  height: 100%;
   padding: 50px 0px;
   text-align: center;
   display: flex;
