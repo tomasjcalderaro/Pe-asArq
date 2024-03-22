@@ -6,6 +6,14 @@
 }
 
 /* General */
+@font-face {
+  font-family: 'Geometos';
+  src: url(../fuente/Geometos.ttf);
+  font-weight: bold;
+  font-style: bold;
+  font-size: 40px;
+  
+}
 
 header {
   background-color: #6aa3b4;
@@ -51,6 +59,12 @@ header {
 filter: brightness(1.1);
 mix-blend-mode: multiply;
 }
+/* HAY QUE VER BIEN EL EFECTO DESPUES */
+/* .logo:hover{
+  transition: 0.9s all;
+  transform: scale(1.1);
+  cursor: pointer;
+} */
 
 .video {
    overflow-x: hidden;
@@ -158,16 +172,24 @@ mix-blend-mode: multiply;
   display: flex;
   margin-top: 0px;
   margin-bottom: 80px;
-  font-family: "Roboto", sans-serif;
+  font-family: "geometos";
+  font-size: 40px;
 }
-.h1 {
+.tit1 .titulo1 {
   display: flex;
   background-color: #6aa3b4;
   justify-content: left;
   margin-top: 50px;
-  font-family: "Roboto", sans-serif;
+  
 }
 
+.tit1 .titulo2{
+  display: flex;
+  background-color: #6aa3b4;
+  justify-content: right;
+  margin-top: 50px;
+   font-family: "Roboto", sans-serif;
+}
 .parrafos {
   display: flex;
   margin-top: 80px;
@@ -181,7 +203,7 @@ mix-blend-mode: multiply;
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "geometos";
 }
 .tarjeta {
   width: 60%;
@@ -394,6 +416,7 @@ mix-blend-mode: multiply;
 .formularioContacto .formulario .title {
   font-size: 2em;
   margin-bottom: 50px;
+  font-family: "geometos";
 }
 .formularioContacto .formulario .inputContainer {
   position: relative;
