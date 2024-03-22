@@ -171,9 +171,10 @@ mix-blend-mode: multiply;
 .tit1 {
   display: flex;
   margin-top: 0px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   font-family: "geometos";
   font-size: 40px;
+ 
 }
 .tit1 .titulo1 {
   display: flex;
@@ -183,11 +184,18 @@ mix-blend-mode: multiply;
   
 }
 
-.tit1 .titulo2{
+.tit2{
+   display: flex;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  font-family: "geometos";
+  font-size: 40px;
+ 
+}
+.tit2 .titulo2{
   display: flex;
   background-color: #6aa3b4;
-  justify-content: right;
-  margin-top: 50px;
+  margin-top: 10px;
    font-family: "Roboto", sans-serif;
 }
 .parrafos {
