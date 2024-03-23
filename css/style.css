@@ -192,7 +192,7 @@ cursor: pointer;
 .video {
   width: 90%;
   margin: 0;
-   margin-top: 200px;
+  margin-top: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
