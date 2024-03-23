@@ -9,6 +9,21 @@ body{
   width: 100%;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    height: .65rem; 
+    width: .62rem;
+    border-radius: .5rem;
+    --tw-bg-opacity: 1;
+    background-color: #8c8c88;
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: #595956;
+}
+body::-webkit-scrollbar-track {
+    border-radius: .5rem;
+   
+}
 /* General */
 @font-face {
   font-family: 'Geometos';
@@ -61,6 +76,7 @@ header {
 
 .navbar .container-fluid .navbar-collapse {
   flex-grow: 0;
+  background-color: grey;
 }
 
 .navbar .container-fluid .navbar-collapse .navbar-nav{
@@ -203,15 +219,13 @@ cursor: pointer;
    display: flex;
   margin-top: 0px;
   margin-bottom: 80px;
-  font-family: "geometos";
   font-size: 40px;
- 
+ font-family: "Roboto", sans-serif;
 }
 .tit2 .titulo2{
   display: flex;
   background-color: #6aa3b4;
   margin-top: 10px;
-   font-family: "Roboto", sans-serif;
 }
 .parrafos {
   display: flex;
