@@ -1,3 +1,4 @@
+
 $.fn.jQuerySimpleCounter = function (options) {
   var settings = $.extend(
     {
@@ -12,7 +13,15 @@ $.fn.jQuerySimpleCounter = function (options) {
 
   var thisElement = $(this);
 
-  $({ count: settings.start }).animate(
+
+document.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.contenedorbarra');
+
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            section.classList.add('active'); 
+            $({ count: settings.start }).animate(
     { count: settings.end },
     {
       duration: settings.duration,
@@ -24,6 +33,13 @@ $.fn.jQuerySimpleCounter = function (options) {
       complete: settings.complete,
     }
   );
+        } else {
+            section.classList.remove('active');
+        }
+    });
+});
+
+  
 };
 
 $("#number1").jQuerySimpleCounter({ end: 12, duration: 3000 });
