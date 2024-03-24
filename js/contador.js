@@ -23,14 +23,6 @@ let CounterObserver = new IntersectionObserver(
         }
       }
       UpdateCounter();
-
-      if (number.parentElement.style.animation) {
-        number.parentElement.style.animation = '';
-      } else {
-        number.parentElement.style.animation = `slide-up 0.3s ease forwards ${
-          index / counters.length + 0.5
-        }s`;
-      }
     });
     observer.unobserve(section_counter);
   },
