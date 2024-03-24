@@ -50,8 +50,6 @@ header {
 .navbar {
   background-color: grey;
   margin-bottom: 30px;
-  /* dejamos al navbar asi o si le ponemos efecto sacamos el height */
-  height: 85px; 
 }
 .navbar .navbar-nav .nav-link {
   position: relative;
