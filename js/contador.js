@@ -16,10 +16,10 @@ let CounterObserver = new IntersectionObserver(
         if (initialNumber < targetNumber) {
           number.innerText = Math.ceil(initialNumber + incPerCount);
           //Aca se cambia la velocidad
-          setTimeout(UpdateCounter, 20);
+          setTimeout(UpdateCounter, 45);
         }
         else {
-          counter.innerText = targetNumber;
+          number.innerText = targetNumber;
         }
       }
       UpdateCounter();
