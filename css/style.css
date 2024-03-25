@@ -172,18 +172,21 @@ cursor: pointer;
 }
 
 .img1 {
-  width: 100%;
+  width: 100vw;
   height: 800px;
+  object-fit: contain ;
 }
 
 .img2 {
-  width: 100%;
+  width: 100vw;
   height: 800px;
+   object-fit: contain ;
 }
 
 .img3 {
-  width: 100%;
+  width: 100vw;
   height: 800px;
+   object-fit: contain ;
 }
 /* Video index */
 .video {
