@@ -8,6 +8,7 @@
 body{
   width: 100%;
   overflow-x: hidden;
+  background-color: #ffffff;
 }
 body::-webkit-scrollbar {
     height: .65rem; 
@@ -37,9 +38,7 @@ body::-webkit-scrollbar-track {
 header {
   background-color: #6aa3b4;
 }
-.arti1 {
-  background-color: rgb(84, 160, 211);
-}
+
 .cuenta {
   display: flex;
   align-items: center;
