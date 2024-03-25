@@ -202,14 +202,14 @@ cursor: pointer;
 .video .containerVideo iframe {
   width: 90%;
   height: 400px;
-  margin: 30px
+  margin: 30px;
 }
 .video .containerVideoP {
   align-content: flex-start;
   font-weight: 100%;
   font-size: 18px;
   overflow-x: hidden;
-  color: #FFFFFF;
+  color: #595959;
 }
 /* Titulos, parrafos */
 
@@ -223,7 +223,6 @@ cursor: pointer;
 }
 .tit1 .titulo1 {
   display: flex;
-  background-color: #6aa3b4;
   justify-content: left;
   margin-top: 50px;
   
@@ -238,7 +237,6 @@ cursor: pointer;
 }
 .tit2 .titulo2{
   display: flex;
-  background-color: #6aa3b4;
   margin-top: 10px;
 }
 .parrafos {
@@ -361,7 +359,7 @@ cursor: pointer;
   padding: 60px;
   text-align: center;
   color: #000000;
-  background-color: #ffc300;
+  background-color: #BFBFBD;
 }
 .contenedor .tabla h2 {
   font-family: "Roboto", sans-serif;
@@ -379,19 +377,7 @@ cursor: pointer;
   margin-bottom: 35px;
   margin: auto;
 }
-.contenedor .tabla .boton {
-  width: 150px;
-  padding: 12px;
-  background: #d7fcd4;
-  text-decoration: none;
-  color: #343759;
-  border-radius: 100px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  margin: auto;
-  font-family: "Roboto", sans-serif;
-}
+
 .contenedor .tabla:hover {
   background: #ffffff;
   color: #000000;
@@ -421,7 +407,7 @@ cursor: pointer;
 .containerBox .boxCard {
   width: 218px;
   height: 200px;
-  background: #fff;
+  background: #595959;
   margin: 1px;
   display: flex;
   align-items: center;
