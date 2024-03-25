@@ -343,7 +343,6 @@ cursor: pointer;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 500px;
 }
 .contenedor .tabla {
   display: inherit;
@@ -389,13 +388,16 @@ cursor: pointer;
 .textSomos {
   display: flex;
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 /* Tabla Programas */
+
 .textoProgramas {
   display: flex;
   justify-content: center;
-  margin-top: 250px;
+  margin: 0em 0;
+  overflow-y: hidden;
   margin-bottom: 110px;
   color: #000000;
 }
@@ -693,5 +695,25 @@ cursor: pointer;
 @media (max-width: 786px) {
   .projectFactsWrap .item {
     flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .textSomos{
+    margin-top: 300px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .textSomos{
+    margin-top: 200px;
+  }
+
+}
+
+@media (max-width: 1140px) {
+  .textSomos{
+    margin-top: 600px;
   }
 }
