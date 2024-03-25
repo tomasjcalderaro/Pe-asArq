@@ -106,7 +106,6 @@ cursor: pointer;
   flex-direction: column;
   padding: 70px;
   overflow-x: hidden;
-  margin: auto;
 }
 
 .box__footer .logo img {
