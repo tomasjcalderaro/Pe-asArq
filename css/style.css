@@ -1,3 +1,4 @@
+/* General */
 * {
   border: 0;
   box-sizing: border-box;
@@ -25,7 +26,7 @@ body::-webkit-scrollbar-track {
     border-radius: .5rem;
    
 }
-/* General */
+
 @font-face {
   font-family: 'Geometos';
   src: url(../fuente/Geometos.ttf);
@@ -39,10 +40,6 @@ header {
   background-color: #6aa3b4;
 }
 
-.cuenta {
-  display: flex;
-  align-items: center;
-}
 
 /* navbar */
 
@@ -734,8 +731,14 @@ cursor: pointer;
   .carousel-control-next-icon{
     margin-top: 399px;
   }
+  .textoProgramas{
+    font-size: 18px;
+  }
   .textSomos{
     margin-top: 530px;
+  }
+  .containerBox .boxCard{
+    margin-bottom: 10px;
   }
  .carousel{
     height: 400px;
