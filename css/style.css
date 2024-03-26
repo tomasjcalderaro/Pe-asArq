@@ -231,7 +231,6 @@ cursor: pointer;
    display: flex;
   margin-top: 0px;
   margin-bottom: 80px;
-  font-size: 40px;
  font-family: "Roboto", sans-serif;
 }
 .tit2 .titulo2{
@@ -692,13 +691,19 @@ cursor: pointer;
   background: white;
 }
 
-@media (max-width: 1140px) {
+@media screen and (max-width: 1140px) {
+  .titulo2 {
+    font-size: 26px;
+  }
   .textSomos{
     margin-top: 600px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and  (max-width: 768px) {
+   .titulo2{
+    font-size: 24px;
+  }
  .carousel-control-prev-icon{
     margin-top: 300px;
   }
@@ -719,7 +724,10 @@ cursor: pointer;
 }
 
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+  .titulo2{
+    font-size: 20px;
+  }
     .carousel-control-prev-icon{
     margin-top: 399px;
   }
