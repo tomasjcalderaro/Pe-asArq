@@ -6,40 +6,37 @@
   padding: 0;
 }
 
-body{
+body {
   width: 100%;
   overflow-x: hidden;
   background-color: #ffffff;
 }
 body::-webkit-scrollbar {
-    height: .65rem; 
-    width: .62rem;
-    border-radius: .5rem;
-    --tw-bg-opacity: 1;
-    background-color: #8c8c88;
+  height: 0.65rem;
+  width: 0.62rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: #8c8c88;
 }
-body::-webkit-scrollbar-thumb{
-  border-radius: .5rem;
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
   background-color: #595956;
 }
 body::-webkit-scrollbar-track {
-    border-radius: .5rem;
-   
+  border-radius: 0.5rem;
 }
 
 @font-face {
-  font-family: 'Geometos';
+  font-family: "Geometos";
   src: url(../fuente/Geometos.ttf);
   font-weight: bold;
   font-style: bold;
   font-size: 40px;
-  
 }
 
 header {
   background-color: #6aa3b4;
 }
-
 
 /* navbar */
 
@@ -73,21 +70,20 @@ header {
   background-color: grey;
 }
 
-.navbar .container-fluid .navbar-collapse .navbar-nav{
+.navbar .container-fluid .navbar-collapse .navbar-nav {
   float: right;
 }
 .logo {
-filter: brightness(1.1);
-mix-blend-mode: multiply;
- transition: 0.9s all;
-cursor: pointer;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  transition: 0.9s all;
+  cursor: pointer;
 }
 /* HAY QUE VER BIEN EL EFECTO DESPUES */
- .logo:hover{
+.logo:hover {
   transition: 0.9s all;
   transform: scale(1.1);
-  
-} 
+}
 /* Footer */
 .container__footer {
   display: flex;
@@ -170,19 +166,19 @@ cursor: pointer;
 .img1 {
   width: 100vw;
   height: 800px;
-  object-fit: contain ;
+  object-fit: contain;
 }
 
 .img2 {
   width: 100vw;
   height: 800px;
-   object-fit: contain ;
+  object-fit: contain;
 }
 
 .img3 {
   width: 100vw;
   height: 800px;
-   object-fit: contain ;
+  object-fit: contain;
 }
 /* Video index */
 .video {
@@ -193,7 +189,6 @@ cursor: pointer;
   justify-content: space-between;
   align-items: center;
   overflow-x: hidden;
-  
 }
 .video .containerVideo iframe {
   width: 90%;
@@ -215,22 +210,20 @@ cursor: pointer;
   margin-bottom: 0px;
   font-family: "geometos";
   font-size: 40px;
- 
 }
 .tit1 .titulo1 {
   display: flex;
   justify-content: left;
   margin-top: 50px;
-  
 }
 
-.tit2{
-   display: flex;
+.tit2 {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 80px;
- font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.tit2 .titulo2{
+.tit2 .titulo2 {
   display: flex;
   margin-top: 10px;
 }
@@ -347,13 +340,13 @@ cursor: pointer;
   height: 590px;
   margin: 50px;
   border: 1px solid #343759;
-   transition: 0.5s all;
+  transition: 0.5s all;
   border-radius: 4px;
-  box-shadow:  25px 25px 10px rgb(0 0 0 /20%);
+  box-shadow: 25px 25px 10px rgb(0 0 0 /20%);
   padding: 60px;
   text-align: center;
   color: #000000;
-  background-color: #BFBFBD;
+  background-color: #bfbfbd;
 }
 .contenedor .tabla h2 {
   font-family: "Roboto", sans-serif;
@@ -484,14 +477,14 @@ cursor: pointer;
 
 .formularioContacto .formulario .inputContainer.error .input .i {
   visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
 }
 
 .inputContainer.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
+  color: #e74c3c;
+  visibility: visible;
 }
 .formularioContacto .formulario .inputContainer .input::placeholder {
   color: transparent;
@@ -508,11 +501,7 @@ cursor: pointer;
   margin-bottom: 20px;
   border: 2px solid purple;
 }
-.formularioContacto
-  .formulario
-  .inputContainer
-  .input:not(:placeholder-shown)
-  + .label {
+.formularioContacto .formulario .inputContainer .input:not(:placeholder-shown) + .label {
   top: -8px;
   left: 3px;
   z-index: 10;
@@ -676,7 +665,7 @@ cursor: pointer;
   vertical-align: middle;
   font-size: 50px;
   color: rgba(255, 255, 255, 0.8);
-  margin-left: 15px; 
+  margin-left: 15px;
 }
 
 .projectFactsWrap .item:hover i,
@@ -688,60 +677,130 @@ cursor: pointer;
   background: white;
 }
 
+/* Parallax */
+
+.parallax {
+  position: relative;
+
+  /* aspect ratio sizing  */
+  width: 100%;
+  height: 50vw;
+
+  /*  transform*/
+  transform-origin: bottom center;
+  will-change: transform;
+  transform: translate3d(0, calc(var(--pct) * 35%), 0) /*translate down  */ scale3d(calc(var(--pct) / 2 + 1), calc(var(--pct) / 2 + 1), 1) /*  scale to create zoom effect*/;
+
+  /* //  parallax layers  */
+  div {
+    /* //  stack and make layers fit to wrapper */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* //  transform */
+    will-change: transform;
+    transform-origin: bottom center;
+    transform: translate3d(0, 0, 0);
+
+    /* translate up using 2.5% offset on each layer */
+    &.p1 {
+      transform: translate3d(0, calc(var(--pct) * -20%), 0);
+    }
+    &.p2 {
+      transform: translate3d(0, calc(var(--pct) * -17.5%), 0);
+    }
+    &.p3 {
+      transform: translate3d(0, calc(var(--pct) * -15%), 0);
+    }
+    &.p4 {
+      transform: translate3d(0, calc(var(--pct) * -12.5%), 0);
+    }
+    &.p5 {
+      transform: translate3d(0, calc(var(--pct) * -10%), 0);
+    }
+    &.p6 {
+      transform: translate3d(0, calc(var(--pct) * -7.5%), 0);
+    }
+    &.p7 {
+      transform: translate3d(0, calc(var(--pct) * -5%), 0);
+    }
+    &.p8 {
+      transform: translate3d(0, calc(var(--pct) * -2.5%), 0);
+    }
+  }
+}
+
+/* a bit of styling    */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @media screen and (max-width: 1140px) {
   .titulo2 {
     font-size: 26px;
   }
-  .textSomos{
+  .textSomos {
     margin-top: 600px;
   }
 }
 
-@media screen and  (max-width: 768px) {
-   .titulo2{
+@media screen and (max-width: 768px) {
+  .titulo2 {
     font-size: 24px;
   }
- .carousel-control-prev-icon{
+  .carousel-control-prev-icon {
     margin-top: 300px;
   }
-  .carousel-control-next-icon{
+  .carousel-control-next-icon {
     margin-top: 300px;
   }
-  .carousel{
+  .carousel {
     height: 500px;
     margin: 0;
   }
-  .textSomos{
+  .textSomos {
     margin-top: 530px;
-  } 
+  }
   .projectFactsWrap .item {
     flex: 0 0 50%;
   }
-
 }
 
-
 @media screen and (max-width: 576px) {
-  .titulo2{
+  .titulo2 {
     font-size: 20px;
   }
-    .carousel-control-prev-icon{
+  .carousel-control-prev-icon {
     margin-top: 399px;
   }
-  .carousel-control-next-icon{
+  .carousel-control-next-icon {
     margin-top: 399px;
   }
-  .textoProgramas{
+  .textoProgramas {
     font-size: 18px;
   }
-  .textSomos{
+  .textSomos {
     margin-top: 530px;
   }
-  .containerBox .boxCard{
+  .containerBox .boxCard {
     margin-bottom: 10px;
   }
- .carousel{
+  .carousel {
     height: 400px;
-     margin: 0;
+    margin: 0;
   }
 }

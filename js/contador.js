@@ -1,6 +1,5 @@
-let section_counter = document.querySelector('#contador');
-let counters = document.querySelectorAll('.contenedorbarra .number');
-
+let section_counter = document.querySelector("#contador");
+let counters = document.querySelectorAll(".contenedorbarra .number");
 
 let CounterObserver = new IntersectionObserver(
   (entries, observer) => {
@@ -17,8 +16,7 @@ let CounterObserver = new IntersectionObserver(
           number.innerText = Math.ceil(initialNumber + incPerCount);
           //Aca se cambia la velocidad
           setTimeout(UpdateCounter, 45);
-        }
-        else {
+        } else {
           number.innerText = targetNumber;
         }
       }
