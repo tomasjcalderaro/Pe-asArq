@@ -508,6 +508,7 @@ textarea {
   resize: vertical;
   min-height: 60px;
   max-height: 80px;
+  font-family: "Roboto", sans-serif;
 }
 .formularioContacto .formulario .submitBtn {
   display: block;
