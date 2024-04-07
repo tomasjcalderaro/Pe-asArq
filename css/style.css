@@ -163,22 +163,11 @@ header {
   margin-top: 10px;
 }
 
-.img1 {
+.carousel-item img {
   width: 100vw;
   height: 800px;
   object-fit: contain;
-}
-
-.img2 {
-  width: 100vw;
-  height: 800px;
-  object-fit: contain;
-}
-
-.img3 {
-  width: 100vw;
-  height: 800px;
-  object-fit: contain;
+  display: block;
 }
 /* Video index */
 .video {
