@@ -47,6 +47,9 @@ header {
 .navbar .navbar-nav .nav-link {
   position: relative;
 }
+.navbar .navbar-nav .nav-item a {
+  color: #000000;
+}
 .navbar .navbar-nav .nav-link::before {
   content: "";
   position: absolute;
